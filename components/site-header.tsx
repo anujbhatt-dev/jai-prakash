@@ -59,7 +59,27 @@ export function SiteHeader() {
             transition={{ duration: reduceMotion ? 0 : 0.24 }}
           >
             {links.map(([label, id]) => (
-              <a href={`#${id}`} key={id} onClick={() => setOpen(false)}>
+              <a
+                href={`#${id}`}
+                key={id}
+                onClick={(event) => {
+                  event.preventDefault();
+                  setOpen(false);
+
+                  const hash = `#${id}`;
+                  if (window.location.hash !== hash) {
+                    window.history.pushState(null, "", hash);
+                  }
+
+                  window.setTimeout(
+                    () => document.getElementById(id)?.scrollIntoView({
+                      behavior: reduceMotion ? "auto" : "smooth",
+                      block: "start",
+                    }),
+                    reduceMotion ? 0 : 260,
+                  );
+                }}
+              >
                 {label}<span aria-hidden="true">↗</span>
               </a>
             ))}
