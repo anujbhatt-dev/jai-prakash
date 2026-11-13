@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ChevronLeft, ChevronRight, Search, X } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type booksData from "../data/books.json";
 import { MotionReveal } from "./motion-reveal";
 
@@ -19,6 +19,7 @@ export function BookCatalogue({
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
+  const pageSizeRef = useRef(10);
   const reduceMotion = useReducedMotion();
   const filteredBooks = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase();
@@ -38,7 +39,11 @@ export function BookCatalogue({
   useEffect(() => {
     const updatePageSize = () => {
       const columns = window.innerWidth <= 650 ? 2 : window.innerWidth <= 1100 ? 4 : 5;
-      setPageSize(columns * 5);
+      const nextPageSize = columns * 5;
+      if (nextPageSize === pageSizeRef.current) return;
+
+      pageSizeRef.current = nextPageSize;
+      setPageSize(nextPageSize);
       setPage(1);
     };
 
@@ -147,20 +152,9 @@ export function BookCatalogue({
             >
               <ChevronLeft size={17} aria-hidden="true" /> <span>Previous</span>
             </button>
-            <div className="pagination-pages" aria-label={`Page ${page} of ${pageCount}`}>
-              {Array.from({ length: pageCount }, (_, index) => index + 1).map((pageNumber) => (
-                <button
-                  className="pagination-page"
-                  type="button"
-                  key={pageNumber}
-                  onClick={() => goToPage(pageNumber)}
-                  aria-label={`Page ${pageNumber}`}
-                  aria-current={pageNumber === page ? "page" : undefined}
-                >
-                  {pageNumber}
-                </button>
-              ))}
-            </div>
+            <span className="pagination-current" aria-live="polite" aria-atomic="true">
+              {page} / {pageCount}
+            </span>
             <button
               className="pagination-arrow"
               type="button"

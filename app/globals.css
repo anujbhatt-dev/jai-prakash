@@ -802,14 +802,6 @@ input:focus-visible {
   border-top: 1px solid var(--line);
 }
 
-.pagination-pages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-}
-
-.pagination-page,
 .pagination-arrow {
   display: inline-flex;
   min-width: 40px;
@@ -825,21 +817,23 @@ input:focus-visible {
   transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
-.pagination-page:hover,
 .pagination-arrow:not(:disabled):hover {
   border-color: var(--line);
   color: var(--burgundy);
 }
 
-.pagination-page[aria-current="page"] {
-  border-color: var(--burgundy);
-  background: var(--burgundy);
-  color: var(--paper-light);
-}
-
 .pagination-arrow {
   padding: 0 10px;
   color: var(--burgundy);
+}
+
+.pagination-current {
+  min-width: 72px;
+  color: var(--burgundy);
+  font-family: var(--display);
+  font-size: 17px;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
 }
 
 .pagination-arrow:disabled {
@@ -1616,11 +1610,6 @@ input:focus-visible {
     margin-top: 30px;
   }
 
-  .pagination-pages {
-    order: -1;
-    flex: 0 0 100%;
-  }
-
   .pagination-arrow {
     min-width: 100px;
   }
@@ -1806,7 +1795,6 @@ body {
 .book-number { font-size: 12px; }
 .book-card-copy h3 { font-size: clamp(15px, 1.25vw, 18px); }
 .book-card-copy p { font-size: 15px; }
-.pagination-page,
 .pagination-arrow { font-size: 14px; }
 .timeline-index { font-size: 15px; }
 .timeline-date,
