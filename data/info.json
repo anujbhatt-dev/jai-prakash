@@ -1,0 +1,172 @@
+{
+  "person": {
+    "publishedNames": [
+      "Dr. Jai Prakash Navendu Maharshi Avtar",
+      "Maharshi Navendu",
+      "Maharshi J. P. Navendu",
+      "Jaiprakash Navendu Maharshi",
+      "Dr. Navendu Dalit Avatar"
+    ],
+    "birthDate": "1955-09-08",
+    "birthPlace": {
+      "village": "Bakra Nangla",
+      "district": "Bijnor",
+      "state": "Uttar Pradesh",
+      "country": "India"
+    },
+    "residence": "Dehradun, Uttarakhand, India",
+    "biography": "Dr. Jai Prakash Navendu Maharshi Avtar is a Hindi Dalit poet, writer and thinker whose works explore caste discrimination, social justice, equality, politics, religion and human values. Through poetry, stories, novels and philosophical writing, he advocates for social reform and a more inclusive society."
+  },
+  "education": [
+    {
+      "level": "Primary",
+      "institution": "Village school",
+      "location": "Bakra Nangla"
+    },
+    {
+      "level": "Class 8",
+      "institution": "School in nearby Shadipur village"
+    },
+    {
+      "level": "Classes 10 and 12",
+      "institution": "Hindu Inter College",
+      "location": "Nagina, Uttar Pradesh",
+      "period": "1972–1974",
+      "note": "The biography says he lived with his sister's family while studying."
+    },
+    {
+      "level": "Bachelor of Arts",
+      "institution": "Vardhaman Degree College",
+      "location": "Bijnor, Uttar Pradesh",
+      "year": 1976
+    },
+    {
+      "level": "Bachelor of Education",
+      "institution": "D.A.V. Degree College",
+      "location": "Dehradun, Uttarakhand",
+      "period": "1977–1978"
+    },
+    {
+      "level": "Master of Arts in Hindi",
+      "institution": "D.A.V. Degree College",
+      "location": "Dehradun, Uttarakhand",
+      "period": "1979–1980"
+    }
+  ],
+  "doctoralResearch": {
+    "status": "Not completed",
+    "institution": "Garhwal University",
+    "enrollmentYear": 1985,
+    "topic": "A comparative psychological study of the story literature of Ajay and Jainendra Jain",
+    "initialSupervisor": "Gaya Prasad Shukla",
+    "note": "The biography says the PhD was left incomplete in 1987 after a disagreement with a later supervisor related to caste."
+  },
+  "career": {
+    "appointmentDate": "1980-07-08",
+    "position": "Teacher, C.T. Grade",
+    "institution": "Gandhi Inter College",
+    "location": "Dehradun, Uttarakhand",
+    "retirementYear": 2016,
+    "lastReportedPosition": "Vice-Principal",
+    "additionalNote": "The biography says he chose to leave the principal post because he feared it would hinder his creative work."
+  },
+  "publications": {
+    "reportedTotal": 133,
+    "reportedAsOf": "The date of the source publication is not shown.",
+    "genres": [
+      "Poetry collections",
+      "Poetry",
+      "Short stories",
+      "Novels",
+      "Drama",
+      "Religion",
+      "Philosophy",
+      "Politics"
+    ]
+  },
+  "completedResearchAboutAuthor": [
+    {
+      "title": "The Contribution of Maharshi Navendu to Hindi Dalit Literature",
+      "degree": "PhD",
+      "researcher": "Gayatri Singh",
+      "supervisor": "Dr. Kalyan Kumar Jha",
+      "institution": "Babasaheb Bhimrao Ambedkar Bihar University",
+      "location": "Muzaffarpur, Bihar"
+    },
+    {
+      "title": "Dalit Consciousness in the Non-Poetic Literature of Jaiprakash Navendu Maharshi",
+      "degree": "PhD",
+      "researcher": "Geeta Kumari",
+      "supervisor": "Dr. Sunil Kumar",
+      "institution": "Magadh University",
+      "location": "Bodh Gaya, Bihar"
+    },
+    {
+      "title": "The Poetic World of Jaiprakash Navendu Maharshi: A New Study",
+      "degree": "PhD",
+      "researcher": "Soni Rani",
+      "supervisor": "Dr. Umashankar Singh",
+      "institution": "Magadh University",
+      "location": "Bodh Gaya, Bihar"
+    },
+    {
+      "title": "A study of the novel Dohan",
+      "degree": "MPhil",
+      "researcher": "Kumari Ravi",
+      "supervisor": "Dr. Shyoraj Singh Bechain",
+      "institution": "University of Delhi",
+      "location": "Delhi"
+    },
+    {
+      "title": "The Element of Love in Maharshi Navendu's Poetry",
+      "degree": "PhD",
+      "researcher": "Ajay Kumar",
+      "supervisor": "Dr. Kalyan Kumar Jha",
+      "institution": "Babasaheb Bhimrao Ambedkar Bihar University",
+      "location": "Muzaffarpur, Bihar"
+    }
+  ],
+  "awardsAndRecognition": [
+    {
+      "name": "Tarun Shri Award",
+      "awardingOrganization": "Tarun Sangh",
+      "location": "Dehradun, Uttarakhand",
+      "year": 1985
+    },
+    {
+      "name": "Dr. Ambedkar National Award",
+      "awardingOrganization": "Bharatiya Dalit Sahitya Akademi",
+      "location": "Delhi",
+      "year": 2012
+    },
+    {
+      "name": "Radhakrishna Kukreti Sahitya Shiromani Award",
+      "awardingOrganization": "Hindi Bhavan",
+      "location": "Dehradun, Uttarakhand",
+      "year": 2018
+    },
+    {
+      "name": "Honorary doctorate",
+      "awardingOrganization": "Magic Book of Records",
+      "location": "Faridabad, Haryana",
+      "date": "January 2025",
+      "basis": "Recognition associated with a record of 100 books."
+    },
+    {
+      "name": "Civic felicitation",
+      "organizers": "Intellectuals and social workers of Dehradun",
+      "location": "Outside Deendayal Park, Dehradun",
+      "details": "Held at a public gathering described as a Sadak Sansad. It was chaired by trade-union leader D. R. Kothari, with former cabinet minister Dinesh Agarwal as chief guest."
+    }
+  ],
+  "publisher": {
+    "name": "Prakhar Prakashan",
+    "location": "Delhi 110032"
+  },
+  "sourceImages": [
+    "WhatsApp Image 2026-11-12 at 5.21.29 PM.jpeg",
+    "WhatsApp Image 2026-11-12 at 5.21.44 PM.jpeg",
+    "WhatsApp Image 2026-11-12 at 5.22.00 PM.jpeg"
+  ],
+  "transcriptionNote": "English summaries and translations were prepared from three photographed Hindi pages. Some names and place spellings are difficult to read in the photos and should be checked against the original printed source before formal publication."
+}
