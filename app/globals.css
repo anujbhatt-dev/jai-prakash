@@ -729,6 +729,33 @@ input:focus-visible {
   list-style: none;
 }
 
+.catalogue-index {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.catalogue-index summary {
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.catalogue-index ul {
+  columns: 2;
+  padding-left: 20px;
+}
+
+.catalogue-index li {
+  break-inside: avoid;
+  padding: 3px 10px 3px 0;
+}
+
+@media (max-width: 650px) {
+  .catalogue-index ul { columns: 1; }
+}
+
 .book-card {
   min-width: 0;
 }

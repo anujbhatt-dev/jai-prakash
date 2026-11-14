@@ -96,6 +96,17 @@ export function BookCatalogue({
           </p>
         </div>
 
+        <details className="catalogue-index">
+          <summary>View the complete Hindi and English title index</summary>
+          <ul>
+            {books.map((book) => (
+              <li key={book.filename}>
+                <span lang="hi">{book.title}</span> <span>({book.engTitle})</span>
+              </li>
+            ))}
+          </ul>
+        </details>
+
         {filteredBooks.length > 0 ? (
           <motion.ul className="book-grid" id="book-grid" layout={!reduceMotion}>
             <AnimatePresence initial={false} mode="popLayout">
