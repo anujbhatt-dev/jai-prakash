@@ -74,7 +74,7 @@ export function BookCatalogue({
             <Search size={18} strokeWidth={1.5} aria-hidden="true" />
             <span className="sr-only">Search titles in Hindi or English</span>
             <input
-              type="search"
+              type="text"
               value={query}
               onChange={(event) => {
                 setQuery(event.target.value);

@@ -518,6 +518,136 @@ input:focus-visible {
   background: var(--paper-deep);
 }
 
+.more-info-section {
+  overflow: hidden;
+  background: linear-gradient(135deg, #4c1928 0%, #35121d 100%);
+  color: var(--paper-light);
+}
+
+.more-info-section .eyebrow {
+  color: #d7c29d;
+}
+
+.more-info-section .eyebrow span,
+.more-info-section h2 em {
+  color: #e2c995;
+}
+
+.more-info-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 39px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgb(226 201 149 / 30%);
+}
+
+.more-info-heading h2 {
+  max-width: 840px;
+  font-family: var(--hindi);
+  font-size: clamp(43px, 6vw, 78px);
+  letter-spacing: -0.035em;
+  line-height: 1.22;
+}
+
+.translation-toggle {
+  display: inline-flex;
+  flex: 0 0 auto;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  padding: 0 19px;
+  border: 1px solid rgb(226 201 149 / 62%);
+  border-radius: 2px;
+  background: transparent;
+  color: #f6ead0;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.translation-toggle:hover {
+  background: #e2c995;
+  color: var(--burgundy-deep);
+}
+
+.more-info-content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(200px, 0.34fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 78px);
+  padding: clamp(26px, 4vw, 48px);
+  border: 1px solid rgb(226 201 149 / 28%);
+  background: rgb(255 255 255 / 4%);
+}
+
+.more-info-cover-wrap {
+  width: 100%;
+  max-width: 300px;
+  justify-self: center;
+  padding: 9px;
+  border: 1px solid rgb(226 201 149 / 45%);
+  background: rgb(0 0 0 / 13%);
+  box-shadow: 0 22px 55px rgb(0 0 0 / 28%);
+  transform: rotate(-1.5deg);
+}
+
+.more-info-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.more-info-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 0;
+  color: #f1e8dd;
+  font-family: var(--hindi);
+  font-size: clamp(17px, 1.6vw, 21px);
+  line-height: 2;
+}
+
+.more-info-copy > div {
+  display: block;
+}
+
+.more-info-copy p {
+  margin: 0 0 23px;
+}
+
+.more-info-copy .more-info-lead {
+  padding-bottom: 19px;
+  border-bottom: 1px solid rgb(226 201 149 / 35%);
+  color: #fff8ec;
+  font-family: var(--display), var(--hindi);
+  font-size: clamp(27px, 3.1vw, 43px);
+  line-height: 1.65;
+}
+
+.translation-copy {
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.translation-copy .more-info-lead {
+  font-family: var(--display);
+  font-size: clamp(27px, 3.1vw, 43px);
+  line-height: 1.4;
+}
+
+.translation-note {
+  color: #c7b6a5;
+  font-size: 12px;
+  font-style: italic;
+}
+
+
 .about-grid {
   display: grid;
   grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.18fr);
@@ -1409,6 +1539,17 @@ input:focus-visible {
     gap: 45px;
   }
 
+  .more-info-content {
+    grid-template-columns: minmax(140px, 0.55fr) minmax(0, 1fr);
+    gap: 26px;
+    padding: 24px 20px;
+  }
+
+  .more-info-cover-wrap {
+    max-width: 230px;
+  }
+
+
   .research-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1546,6 +1687,50 @@ input:focus-visible {
   .section {
     padding: 78px 0;
   }
+
+  .more-info-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 23px;
+    margin-bottom: 25px;
+  }
+
+  .more-info-heading h2 {
+    font-size: clamp(40px, 10vw, 58px);
+  }
+
+  .translation-toggle {
+    justify-self: start;
+  }
+
+  .more-info-copy {
+    display: block;
+    font-size: 17px;
+  }
+
+  .more-info-copy > div {
+    display: block;
+  }
+
+  .more-info-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 24px 20px;
+  }
+
+  .more-info-cover-wrap {
+    width: min(68%, 240px);
+  }
+
+  .more-info-copy .more-info-lead {
+    margin-bottom: 22px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid rgb(226 201 149 / 35%);
+    font-size: 27px;
+    line-height: 1.55;
+  }
+
 
   .section h2 {
     font-size: clamp(43px, 11vw, 62px);

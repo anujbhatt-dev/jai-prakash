@@ -7,6 +7,7 @@ import { BookCatalogue } from "./book-catalogue";
 import { ContactSection } from "./contact-section";
 import { HeroSection } from "./hero-section";
 import { LiteraryJourneySection } from "./literary-journey-section";
+import { MoreInfoSection } from "./more-info-section";
 import { SiteHeader } from "./site-header";
 
 export function AuthorArchive() {
@@ -19,6 +20,7 @@ export function AuthorArchive() {
       <main id="main-content">
         <HeroSection info={authorInfo} catalogueTotal={books.length} />
         <AboutSection info={authorInfo} catalogueTotal={books.length} />
+        <MoreInfoSection />
         <BookCatalogue books={books} reportedTotal={authorInfo.publications.reportedTotal} />
         <LiteraryJourneySection info={authorInfo} />
         <AcademicResearchSection works={authorInfo.completedResearchAboutAuthor} />
