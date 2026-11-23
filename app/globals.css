@@ -608,8 +608,8 @@ input:focus-visible {
   min-width: 0;
   color: #f1e8dd;
   font-family: var(--hindi);
-  font-size: clamp(17px, 1.6vw, 21px);
-  line-height: 2;
+  font-size: clamp(13px, 1.05vw, 15px);
+  line-height: 1.8;
 }
 
 .more-info-copy > div {
@@ -625,20 +625,20 @@ input:focus-visible {
   border-bottom: 1px solid rgb(226 201 149 / 35%);
   color: #fff8ec;
   font-family: var(--display), var(--hindi);
-  font-size: clamp(27px, 3.1vw, 43px);
-  line-height: 1.65;
+  font-size: clamp(19px, 1.8vw, 25px);
+  line-height: 1.5;
 }
 
 .translation-copy {
   font-family: var(--body);
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 .translation-copy .more-info-lead {
   font-family: var(--display);
-  font-size: clamp(27px, 3.1vw, 43px);
-  line-height: 1.4;
+  font-size: clamp(19px, 1.8vw, 25px);
+  line-height: 1.35;
 }
 
 .translation-note {
@@ -1706,7 +1706,7 @@ input:focus-visible {
 
   .more-info-copy {
     display: block;
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .more-info-copy > div {
@@ -1727,8 +1727,8 @@ input:focus-visible {
     margin-bottom: 22px;
     padding: 0 0 20px;
     border-bottom: 1px solid rgb(226 201 149 / 35%);
-    font-size: 27px;
-    line-height: 1.55;
+    font-size: 20px;
+    line-height: 1.45;
   }
 
 
