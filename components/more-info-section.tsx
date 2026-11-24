@@ -30,7 +30,7 @@ export function MoreInfoSection() {
           <div className="more-info-cover-wrap">
             <Image
               className="more-info-cover"
-              src="/book-covers/new-019.webp"
+              src="/images/new-019.webp"
               alt="सूर्योदय विश्व समानता का पुस्तक आवरण"
               width={809}
               height={1280}

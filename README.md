@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Book titles are maintained in `data/books.json`, biographical content in `data/info.json`, and the corresponding cover images in `public/book-covers/`.
+Book titles are maintained in `data/books.json`, biographical content in `data/info.json`, and book images in `public/images/`. Place incoming book photos in `public/new-images/`; after preparing and adding them to `data/books.json`, move the image files into `public/images/` so the intake folder stays empty.
 
 ## Search indexing and site URL
 

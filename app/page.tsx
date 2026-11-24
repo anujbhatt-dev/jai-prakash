@@ -1,6 +1,7 @@
 import { AuthorArchive } from "../components/author-archive";
 import books from "../data/books.json";
 import authorInfo from "../data/info.json";
+import faqs from "../data/faqs";
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.jaiprakashnavendu.com").replace(/\/$/, "");
 
@@ -56,7 +57,19 @@ const structuredData = {
           name: book.title,
           alternateName: book.engTitle,
           author: { "@id": siteUrl ? `${siteUrl}/#author` : "#author" },
-          image: siteUrl ? `${siteUrl}/book-covers/${book.filename}` : `/book-covers/${book.filename}`,
+          image: siteUrl ? `${siteUrl}/images/${book.filename}` : `/images/${book.filename}`,
+        },
+      })),
+    },
+    {
+      "@type": "FAQPage",
+      "@id": siteUrl ? `${siteUrl}/#faqs` : "#faqs",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
         },
       })),
     },

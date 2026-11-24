@@ -64,7 +64,7 @@ export function HeroSection({
           <span className="portrait-caption">Maharshi Navendu</span>
           <div className="hero-cover-card">
             <Image
-              src="/book-covers/KM_206_00794_0001.webp"
+              src="/images/KM_206_00794_0001.webp"
               alt="Cover of Bhedbhav Rahit Dharti"
               width={52}
               height={76}

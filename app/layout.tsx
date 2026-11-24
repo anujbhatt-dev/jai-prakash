@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.jaiprakashnavendu.com").replace(/\/$/, "");
-const title = "Dr. Jai Prakash Navendu Maharshi Avtar | Hindi Dalit Writer & Poet";
+const title = "Dr. Jai Prakash Navendu | Hindi Poet & Author";
 const description =
-  "Official literary archive of Dr. Jai Prakash Navendu Maharshi Avtar (Maharshi Navendu), Hindi Dalit poet, writer and thinker. Explore his biography, Hindi books, literary work, research and awards.";
+  "Explore the life and work of Dr. Jai Prakash Navendu Maharshi Avtar, Hindi Dalit poet and author. Browse 133 listed works, 114 catalogued book covers, biography, research and awards.";
 
 export const metadata: Metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : undefined,
@@ -16,20 +16,6 @@ export const metadata: Metadata = {
   publisher: "Maharshi Navendu Literary Archive",
   category: "Literature",
   referrer: "origin-when-cross-origin",
-  keywords: [
-    "Dr Jai Prakash Navendu",
-    "Jai Prakash Navendu",
-    "writer Jai Prakash",
-    "Jai Prakash writer",
-    "Maharshi Navendu",
-    "Dr. Jai Prakash Navendu Maharshi Avtar",
-    "Jaiprakash Navendu Maharshi",
-    "Hindi Dalit writer",
-    "Hindi poet",
-    "Dalit literature",
-    "Hindi books",
-    "Navendu books",
-  ],
   authors: [{ name: "Dr. Jai Prakash Navendu Maharshi Avtar" }],
   robots: {
     index: true,
